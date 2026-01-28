@@ -11,9 +11,9 @@ In the file particle.py it was implemented a class named *Particle*, which embed
 
 
 In the file **forces.py** the forces acting on the particles were implemented. In the paper, the equation of motion was 
-\begin{equation}
-    \mathbf{M\ddot{r}}_i + \mathbf{C\dot{r}}_i+\sum_j\gamma_{ij} \mathbf{C}'\mathbf{\dot{r}}_{ij}+\sum_j \gamma_{ij}' \mathbf{Kr}_{ij}=F_i
-\end{equation}
+$$
+\mathbf{M\ddot{r}}_i + \mathbf{C\dot{r}}_i+\sum_j\gamma_{ij} \mathbf{C}'\mathbf{\dot{r}}_{ij}+\sum_j \gamma_{ij}' \mathbf{Kr}_{ij}=F_i
+$$
 where $\mathbf{M}$ is the diagonal mass-matrix containing the masses and the moments of inertia, $\mathbf{r}_i$ and $\mathbf{\dot{r}}_i$ are the position and velocity of the particle $i$, $\mathbf{r}_{ij}$ and $\mathbf{\dot{r}}_{ij}$ are the corresponding relative vectors for particles $i$ and $j$. $\mathbf{C}$ is the matrix containing the damping coefficients for drag, while $\mathbf{C}'$ contains the coefficients for the inelastic collisions. The parameter $\gamma_{ij}$ is 0 for particles not in contact and 1 ptherwise, while $\gamma_{ij}'$ is unity ofr connected particles and 0 otherwise. $\mathbf{K}$ is the stiffness matrix and $F_i$ is the sum of other forces acting on the particle.
 
 In this code a slightly different approach than the one used in the paper was used. This was done because for a 1-dimensional simulation, using the same approach that was used for the 2-dimensional problem meant overcomplicating the problem. The forces that acted on the particle in the 1D simulation are:
