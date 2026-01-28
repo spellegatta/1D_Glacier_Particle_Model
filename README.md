@@ -1,7 +1,7 @@
 # 1D Particle model for the simulation of glacier dynamics
 In the notebook **Data_analysis.ipynb** the data calculated with the code in run.py, forces.py, integrator.py, particle.py and simulation.py will be displayed and the results will be shown. There, a more deep explanation of the code was given.
 
-In the file particle.py it was implemented a class named *Particle*, which embeds the properties of each particle. 
+In the file **particle.py** it was implemented a class named *Particle*, which embeds the properties of each particle. 
 
 In the file **forces.py** the forces acting on the particles were implemented. 
 
